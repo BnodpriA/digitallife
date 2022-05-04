@@ -4,13 +4,15 @@ import { Container, AppBar, Typography, Grow, Grid } from '@material-ui/core';
 import digitallife from './images/digitallife.png';
 import Form from './components/Form/Form';
 import Posts from './components/Posts/Posts';
+import useStyles from './styles';
 
 const App = () => {
+    const classes = useStyles();
     return (
         <Container maxWidth="lg">
-            <AppBar position='static' color='inherit'>
-                <Typography variant='h2' align='center'>Degitallife</Typography>
-                <img src={digitallife} alt="Digitallife" />
+            <AppBar position='static' color='inherit' className={classes.appBar}>
+                <img className={classes.image} src={digitallife} alt="Digitallife" />
+                <Typography className={classes.heading} variant='h2' align='center'>Digitallife</Typography>
             </AppBar>
             <Grow in>
                 <Container>
