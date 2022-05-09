@@ -15,7 +15,6 @@ export default makeStyles((theme) => ({
     color: '#FF6A74',
   },
   image: {
-    height: 70,
     marginLeft: '15px',
   },
   [theme.breakpoints.down('sm')]: {
