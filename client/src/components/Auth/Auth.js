@@ -14,6 +14,7 @@ const Auth = () => {
     const [ showPassword, setShowPassword ] = useState(false);
     const [isSignup, setSignUp] = useState(false);
     const dispatch = useDispatch();
+    const history = useHistory();
 
     const handleShowPassword = () => setShowPassword((prevShowPassword) => !prevShowPassword);
 
